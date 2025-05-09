@@ -1,0 +1,177 @@
+:root {
+    --nav-top: #19324d;
+    --nav-bot: #262626;
+    --card-bg: #ffffff;
+    --card-border: #ccc;
+    --highlight: #ffd200;
+    --text: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+}
+
+/* Header styling */
+.site-header .top-bar {
+    background: var(--nav-top);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+/* Navigation bar */
+.site-nav {
+    background: var(--nav-bot);
+}
+
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.site-nav a:hover {
+    background-color: var(--highlight);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Page layout */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Card container */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Card titles */
+.card h2 {
+    background: var(--nav-top);
+    color: white;
+    margin: 0;
+    padding: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Sub-heading */
+.card h3 {
+    margin: 1.5rem 0 0.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.card hr {
+    border: 0;
+    border-top: 1px solid var(--card-border);
+    width: 80%;
+    margin: 0.25rem auto 1rem;
+}
+
+/* Text inside cards */
+.card p,
+.card ul {
+    padding: 1rem;
+}
+
+.card ul {
+    margin: 0;
+    list-style: disc inside;
+}
+
+/* About Me: image + text */
+.about-me .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.profile-pic {
+    width: 180px;
+    border-radius: 4px;
+}
+
+/* Facts section */
+.facts {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 0 1rem 1rem;
+}
+
+.facts p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.fact-pic {
+    width: 230px;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+/* Footer styling */
+footer {
+    background: var(--nav-top);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.last-modified {
+    color: var(--highlight);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

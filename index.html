@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 – Dynamic Web Fundamentals – Ezra D. Rivera</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Ezra Rivera – course landing page with bio, California overview, and web development resources.">
+  <meta name="author" content="Ezra Rivera">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Test Here is my Repository</h1>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="top-bar">
+      <h1>WDD 131 – Dynamic Web Fundamentals – <span class="highlight">Ezra D. Rivera</span></h1>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/ezra-rivera/">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        <li><a href="#">Final Project folder</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main content -->
+  <main>
+    <!-- About Me adn California facts -->
+    <section class="card about-me">
+      <h2>About Me</h2>
+      <div class="intro">
+        <img src="images/profile.jpg" alt="Profile photo" class="profile-pic">
+        <p>I was raised in Los Angeles but now live in Orange County near Disneyland. 
+            I am an Engineer passionate about building software and exploring new technologies. 
+            As a single dad to my daughter, I enjoy hiking along the coast, visiting theme parks, 
+            and experimenting with simple home automation projects.</p>
+      </div>
+      <h3>California, USA</h3>
+      <hr>
+      <div class="facts">
+        <img src="images/california.jpg" alt="Map of California" class="fact-pic">
+        <p>California is the most populous U.S. state with over 39 million residents. 
+            Its capital is Sacramento, known for its Gold Rush-era landmarks. The state is 
+            famous for its beaches, Hollywood film industry, and Silicon Valley tech hub. 
+            California’s state flower is the poppy.</p>
+      </div>
+    </section>
+    <!-- Resources -->
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+        <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+        <li><a href="https://codepen.io/">CodePen</a></li>
+      </ul>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>©<span id="currentyear"></span> Ezra Rivera 🏖️ Orange County, CA</p>
+    <p class="last-modified" id="lastModified"></p>
+  </footer>
+
 </body>
 </html>
