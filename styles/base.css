@@ -87,7 +87,7 @@ main {
     text-align: center;
 }
 
-/* Sub-heading */
+/* Sub-heading inside card */
 .card h3 {
     margin: 1.5rem 0 0.5rem;
     text-align: center;
@@ -114,7 +114,20 @@ main {
     list-style: disc inside;
 }
 
-/* About Me: image + text */
+/* Resource link colors */
+.card ul a {
+    color: var(--nav-top);
+    text-decoration: none;
+}
+
+.card ul a:hover {
+    background-color: var(--nav-top);
+    color: white;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+}
+
+/* About Me intro */
 .about-me .intro {
     display: flex;
     flex-direction: row-reverse;
@@ -124,11 +137,11 @@ main {
 }
 
 .profile-pic {
-    width: 180px;
+    width: 230px;
     border-radius: 4px;
 }
 
-/* Facts section */
+/* California facts section */
 .facts {
     display: flex;
     gap: 1rem;
@@ -143,7 +156,7 @@ main {
 }
 
 .fact-pic {
-    width: 230px;
+    width: 200px;
     border-radius: 4px;
     align-self: flex-start;
 }
@@ -157,21 +170,7 @@ footer {
 }
 
 .last-modified {
-    color: var(--highlight);
+    color: white;
     margin-top: 0.5rem;
     font-size: 0.9rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
