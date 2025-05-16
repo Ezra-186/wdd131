@@ -1,0 +1,123 @@
+:root {
+    --font-base: 'Roboto', sans-serif;
+    --bg-page: #f9f9f9;
+    --text-default: #333;
+    --brand-primary: #22006e;
+    --nav-bg: #0059b3;
+    --nav-hover: #003366;
+    --text-on-primary: #fff;
+    --bg-card: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-base);
+    line-height: 1.5;
+    background: var(--bg-page);
+    color: var(--text-default);
+}
+
+header {
+    background: var(--brand-primary);
+    color: var(--text-on-primary);
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--text-on-primary);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#hamburger::before {
+    content: "☰";
+    display: inline-block;
+}
+
+#hamburger.open::before {
+    content: "✕";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem;
+    text-decoration: none;
+    color: var(--text-on-primary);
+    background: var(--nav-bg);
+    text-align: center;
+}
+
+.navigation a:hover {
+    background: var(--nav-hover);
+}
+
+main h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery figure {
+    background: var(--bg-card);
+    border: 1px solid #ddd;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+}
+
+.gallery figcaption {
+    padding: .5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: .875rem;
+    color: var(--text-on-primary);
+    background: var(--brand-primary);
+}
+
+footer p+p {
+    margin-top: .25rem;
+}
