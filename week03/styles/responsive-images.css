@@ -1,0 +1,12 @@
+/* Center and constrain the hero container */
+.hero {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Make the image fluid and maintain aspect ratio */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

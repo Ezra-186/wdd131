@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive hero image of the Los Angeles Temple.">
+    <title>Responsive Images</title>
+    <meta name="author" content="Ezra D. Rivera">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- ≥1000px: use the large image (1500×750) -->
+                <source srcset="images/Temple_3.webp" media="(min-width: 1000px)">
+                <!-- ≥500px: use the medium image (1000×500) -->
+                <source srcset="images/Temple_2.webp" media="(min-width: 500px)">
+                <!-- fallback: small image (500×250) -->
+                <img src="images/Temple_1.webp" alt="Los Angeles Temple at sunset" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
