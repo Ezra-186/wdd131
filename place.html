@@ -10,41 +10,46 @@
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 501px)">
     <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
 </head>
 
 <body>
     <header class="site-header">
         <h1>Los Angeles</h1>
     </header>
-
-    <section class="hero">
-        <picture>
-            <source srcset="images/la-large.webp" media="(min-width: 800px)">
-            <source srcset="images/la-medium.webp" media="(min-width: 501px)">
-            <img src="images/la-small.webp" alt="Los Angeles Hollywood sing at sunset" width="250" height="500" loading="lazy">
-        </picture>
-        <div class="overlay">
-            <section class="data">
-                <h2>Data</h2>
-                <ul>
-                    <li><strong>State: </strong>California</li>
-                    <li><strong>County: </strong>Los Angeles County</li>
-                    <li><strong>Area: </strong>Area: 1,302 km²</li>
-                    <li><strong>Population: </strong>Population: 3,898,747 (2020 Census)</li>
-                    <li><strong>Time Zone: </strong>Pacific Standard Time (UTC −8)</li>
-                    <li><strong>Calling Code: </strong> +1 (323)</li>
-                </ul>
-            </section>
-            <section class="weather">
-                <h2>Weather</h2>
-                <img class="weather-icon" src="images/weather-mobile.svg" alt="Partly cloudy" width="24" height="24">
-                <p><strong>Temperature: </strong><span id="temp">68</span>°F</p>
-                <p><strong>Wind Speed: </strong><span id="speed">5</span> mph</p>
-                <p><strong>Wind Chill: </strong><span id="windchill">N/A</span>°F</p>
-            </section>
-        </div>
-    </section>
-
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/la-large.webp" media="(min-width: 800px)">
+                <source srcset="images/la-medium.webp" media="(min-width: 501px)">
+                <img src="images/la-small.webp" alt="Los Angeles Hollywood sign at sunset" width="250" height="500"
+                    loading="lazy">
+            </picture>
+            <div class="overlay">
+                <section class="data">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>State: </strong>California</li>
+                        <li><strong>County: </strong>Los Angeles County</li>
+                        <li><strong>Area: </strong>1,302 km²</li>
+                        <li><strong>Population: </strong>3,898,747 (2020 Census)</li>
+                        <li><strong>Time Zone: </strong>Pacific Standard Time (UTC −8)</li>
+                        <li><strong>Calling Code: </strong>+1 (323)</li>
+                    </ul>
+                </section>
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <img class="weather-icon" src="images/weather-mobile.svg" alt="Partly cloudy" width="24"
+                        height="24">
+                    <p><strong>Temperature: </strong><span id="temp">68</span>°F</p>
+                    <p><strong>Wind Speed: </strong><span id="speed">5</span> mph</p>
+                    <p><strong>Wind Chill: </strong><span id="windchill">N/A</span>°F</p>
+                </section>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>&copy; <span id="year"></span> Ezra D. Rivera · Last updated: <span id="lastModified"></span></p>
     </footer>
