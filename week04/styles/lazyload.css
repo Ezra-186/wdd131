@@ -1,0 +1,24 @@
+main {
+    margin: 0 auto;
+    width: 400px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    background: #000;
+    opacity: 0;
+    animation: fadeFromBlack 1s ease-out both;
+}
+
+@keyframes fadeFromBlack {
+    from {
+        opacity: 0;
+        filter: brightness(0%);
+    }
+
+    to {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
