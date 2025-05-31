@@ -16,6 +16,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: var(--font-base);
     line-height: 1.5;
     background: var(--bg-page);
@@ -80,9 +83,11 @@ header h1 {
 }
 
 main {
+    flex: 1;
     margin: 2rem auto;
     max-width: 1000px;
     padding: 0 1rem;
+    width: 100%;
 }
 
 main h2 {
