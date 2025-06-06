@@ -55,5 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             starContainer.classList.remove("invalid");
         });
     });
+
+    const lastModifiedEl = document.getElementById("last-modified");
+    lastModifiedEl.textContent = new Date(document.lastModified).toLocaleString("en-US");
 });
-  
