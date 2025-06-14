@@ -164,11 +164,11 @@ nav.nav-links .cta:hover {
 .hero-image {
     width: 100%;
     max-width: 400px;
+    aspect-ratio: 638 / 800;
     border: 24px solid rgba(241, 241, 239, 0.6);
-    border-radius: 20%;
+    border-radius: 15%;
     margin: 0 auto 1rem;
-    display: block;
-}
+    display: block; }
 
 
 /* ===== HIGHLIGHTS/CARDS SECTION ===== */
