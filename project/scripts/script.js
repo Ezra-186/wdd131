@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 13, category: 'Engagements', title: 'Engagements', src: 'images/Website_24.webp' },
         { id: 14, category: 'Family Portraits', title: 'Family Portraits', src: 'images/Website_33.webp' },
         { id: 15, category: 'Weddings', title: 'Weddings', src: 'images/Website_2.webp' },
-        { id: 16, category: 'Portraits', title: 'Portraits', src: 'images/Website_22.jpg' },
+        { id: 16, category: 'Family Portraits', title: 'Family Portraits', src: 'images/Website_22.jpg' },
         { id: 17, category: 'Engagements', title: 'Engagements', src: 'images/Website_36.webp' },
         { id: 18, category: 'Weddings', title: 'Weddings', src: 'images/Website_16.webp' },
         { id: 19, category: 'Weddings', title: 'Weddings', src: 'images/Website_20.webp' },
