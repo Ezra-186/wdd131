@@ -122,6 +122,20 @@ nav.nav-links .cta:hover {
     color: var(--color-white);
 }
 
+.gallery h2 a {
+    color: inherit;
+    font-size: 1.9rem;
+    text-decoration: none;
+}
+
+.gallery h2 a:hover {
+    /* text-decoration: none; */
+    padding: .6rem;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--color-burgundy);
+}
+
 /* Mobile menu toggle button */
 .mobile-menu {
     display: none;
