@@ -698,6 +698,8 @@ footer {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+
+
 /* Team grid tweaks */
 .team-grid {
     display: grid;
@@ -716,6 +718,16 @@ footer {
     border: 6px solid var(--color-beige);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
+}
+
+.circle-image {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
 }
 
 .team-member img:hover {
