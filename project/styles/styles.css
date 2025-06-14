@@ -38,7 +38,8 @@ main {
 
 
 /* ===== TYPOGRAPHY ===== */
-h1, h2 {
+h1,
+h2 {
     font-family: 'Playfair Display', serif;
     color: var(--color-burgundy);
     text-align: center;
@@ -47,11 +48,11 @@ h1, h2 {
 
 h1 {
     font-size: 2.5rem;
-    line-height: 1.2; 
+    line-height: 1.2;
 }
 
 .hero h1 {
-    font-size: clamp(2.5rem, 5vw, 3rem); 
+    font-size: clamp(2.5rem, 5vw, 3rem);
     font-family: 'Playfair Display', serif;
     color: var(--color-burgundy);
     text-align: center;
@@ -88,7 +89,7 @@ header {
 
 .logo-img {
     height: 2rem;
-    width: auto; 
+    width: auto;
 }
 
 nav.nav-links {
@@ -164,9 +165,10 @@ nav.nav-links .cta:hover {
 .hero-image {
     width: 100%;
     max-width: 400px;
-    aspect-ratio: 638 / 800;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border: 24px solid rgba(241, 241, 239, 0.6);
-    border-radius: 15%;
+    border-radius: 50%;
     margin: 0 auto 1rem;
     display: block; }
 
@@ -432,13 +434,14 @@ button.form-submit:hover {
     flex-direction: column;
     gap: 1rem;
     padding: 0.5rem 30px;
- }
+}
 
 .toggle-label {
     flex: 0 0 auto;
     display: flex;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+}
 
 /* hide the real checkbox */
 .toggle-label input {
@@ -457,7 +460,8 @@ button.form-submit:hover {
     background: var(--color-blush-transparent, #f4e3e3);
     border: 1px solid var(--color-blush);
     border-radius: 1.25rem;
-    transition: background 0.2s, border-color 0.2s; }
+    transition: background 0.2s, border-color 0.2s;
+}
 
 /* the knob */
 .toggle-switch::after {
@@ -472,13 +476,14 @@ button.form-submit:hover {
     transition: transform 0.2s;
 }
 
-.toggle-label input:checked + .toggle-switch {
+.toggle-label input:checked+.toggle-switch {
     background: var(--color-burgundy);
     border-color: var(--color-burgundy);
-  }
-  .toggle-label input:checked + .toggle-switch::after {
+}
+
+.toggle-label input:checked+.toggle-switch::after {
     transform: translateX(1.25rem);
-  }
+}
 
 /* ===== DATE PICKER ===== */
 input[type="date"] {
@@ -486,8 +491,9 @@ input[type="date"] {
     padding: 0.5rem;
     border: 1px solid var(--color-blush);
     border-radius: 0.5rem;
-    font-size: 1rem; }
-    
+    font-size: 1rem;
+}
+
 /* Validation styling */
 .contact .required {
     color: rgb(141, 2, 2);
@@ -507,7 +513,7 @@ input[type="date"].error {
 .toggle-group.invalid {
     border: 5px solid rgb(164, 2, 2);
     border-radius: 10px;
-    padding:0.5rem 30px; 
+    padding: 0.5rem 30px;
 }
 
 /* ===== REVIEW PAGE ===== */
@@ -589,7 +595,7 @@ footer {
 
 .socials a:focus-visible {
     outline: 2px solid var(--color-white);
-    outline-offset: 4px; 
+    outline-offset: 4px;
 }
 
 /* Social icon sizing */
@@ -723,7 +729,8 @@ footer {
 
 .team-member p {
     font-size: 1rem;
-    opacity: 0.85; }
+    opacity: 0.85;
+}
 
 /* Team grid */
 .team-grid {
@@ -759,13 +766,13 @@ footer {
 
 .footer-link {
     color: var(--color-white);
-        text-decoration: none;
-        transition: color 0.2s ease;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .footer-link:hover {
     color: var(--color-white);
-        text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* =====REFERENCES PAGE===== */
@@ -775,10 +782,3 @@ footer {
     text-align: center;
     padding: 0 1rem;
 }
-
-
-
-
-
-
-
